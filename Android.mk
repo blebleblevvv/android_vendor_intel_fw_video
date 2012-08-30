@@ -45,6 +45,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
 LOCAL_SRC_FILES := lnc/video_fw/topazsc_fw.bin
 include $(BUILD_PREBUILT)
 
+ifeq ($(TARGET_PRODUCT),mrfl_vp)
 include $(CLEAR_VARS)
 LOCAL_MODULE := vsp_VPP.bin
 LOCAL_MODULE_OWNER := intel
@@ -53,4 +54,16 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
 LOCAL_SRC_FILES := lnc/video_fw/vsp_VPP.bin
 include $(BUILD_PREBUILT)
+endif
+
+ifeq ($(TARGET_PRODUCT),mrfl_sle)
+include $(CLEAR_VARS)
+LOCAL_MODULE := vsp_VPP_sle.bin
+LOCAL_MODULE_OWNER := intel
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
+LOCAL_SRC_FILES := lnc/video_fw/vsp_VPP_sle.bin
+include $(BUILD_PREBUILT)
+endif
 
