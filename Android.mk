@@ -89,3 +89,57 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
 LOCAL_SRC_FILES := lnc/video_fw/ann_signed_vsp_a0key0.bin
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE :=msvdx.bin.0004.0015
+LOCAL_MODULE_OWNER := intel
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
+LOCAL_SRC_FILES := lnc/video_fw/msvdx.bin.0004.0015
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE :=topaz.bin.0004.0015
+LOCAL_MODULE_OWNER := intel
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
+LOCAL_SRC_FILES := lnc/video_fw/topaz.bin.0004.0015
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE :=vsp.bin.0004.0015
+LOCAL_MODULE_OWNER := intel
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
+LOCAL_SRC_FILES := lnc/video_fw/vsp.bin.0004.0015
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE :=msvdx.bin.0004.0001
+LOCAL_MODULE_OWNER := intel
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
+LOCAL_SRC_FILES := lnc/video_fw/msvdx.bin.0004.0001
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE :=topaz.bin.0004.0001
+LOCAL_MODULE_OWNER := intel
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
+LOCAL_SRC_FILES := lnc/video_fw/topaz.bin.0004.0001
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE :=vsp.bin.0004.0001
+LOCAL_MODULE_OWNER := intel
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/firmware
+LOCAL_SRC_FILES := lnc/video_fw/vsp.bin.0004.0001
+include $(BUILD_PREBUILT)
